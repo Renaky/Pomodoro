@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivSample"
+        android:layout_width="400dp"
+        android:layout_height="390dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Manage your time"
+        android:fontFamily="@font/mregular"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSample" />
+
+    <TextView
+        android:id="@+id/subText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Tempo é saúde \n cuide do seu"
+        android:fontFamily="@font/mregular"
+        android:textAlignment="center"
+        android:textColor="#A3A2AD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivSample" />
+
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bgbtnyellow"
+        android:backgroundTint="#ffc055"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/mmedium"
+        android:text="Começar"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:iconTint="#D5C00B"
+        app:backgroundTint="@color/colorYellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#FEC34F" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
