@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Ocultar ActionBar
+        if (getActionBar() != null) {
+            getActionBar().hide();
+        }
         setContentView(R.layout.activity_main);
 
         tvText1 = findViewById(R.id.tvText1);
